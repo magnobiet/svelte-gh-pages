@@ -1,7 +1,7 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
-  "homepage": "https://magnobiet.github.io/svelte-gh-pages/",
+  "homepage": "https://svelte-app.magnobiet.com/",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "rollup": "^1.12.0",
@@ -21,7 +21,7 @@
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME public/",
     "deploy": "npx gh-pages -d public/"
   }
 }
